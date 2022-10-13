@@ -130,7 +130,7 @@ public class StudentManage {
         };
 
         students.sort(comparator);
-        System.out.println("Danh sach sinh vien sau khi sap xep diem tang dan la: ");
+        System.out.println("Danh sách sinh sinh dần sau khi sắp xếp điểm tăng dần là: ");
         displayStudent();
     }
 
@@ -148,7 +148,7 @@ public class StudentManage {
             }
         };
         students.sort(comparator);
-        System.out.println("Danh sach sinh vien sau khi sap xep diem giam dan la: ");
+        System.out.println("Danh sách sinh sinh dần sau khi sắp xếp điểm giảm dần là: ");
         displayStudent();
     }
 
