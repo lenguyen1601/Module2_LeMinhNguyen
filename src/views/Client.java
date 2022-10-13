@@ -12,17 +12,17 @@ public class Client {
         StudentManage studentManage = new StudentManage();
         int choice;
         do {
-            System.out.println("---- CHUONG TRINH QUAN LY SAN PHAM ----");
-            System.out.println("1. Xem danh sach sinh vien");
-            System.out.println("2. Them moi sinh vien");
-            System.out.println("3. Cap nhat sinh vien");
-            System.out.println("4. Xoa");
-            System.out.println("5. Sap xep");
-            System.out.println("6. Doc tu file Csv");
-            System.out.println("7. Ghi vao file Csv");
-            System.out.println("8. Thoat chuong trinh");
+            System.out.println("---- CHƯƠNG TRÌNH QUẢN LÝ SẢN PHẨM ----");
+            System.out.println("1. Xem danh sách sinh viên");
+            System.out.println("2. Thêm mới sinh viên");
+            System.out.println("3. Cập nhật sinh viên");
+            System.out.println("4. Xoá");
+            System.out.println("5. Sắp xếp");
+            System.out.println("6. Đoc file");
+            System.out.println("7. Ghi file");
+            System.out.println("8. Thoát chương trình");
             System.out.println("--------------------------------------------------------");
-            System.out.print("Chon chuc nang: ");
+            System.out.print("Chọn chức năng: ");
             choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
                 case 1 -> studentManage.displayStudent();
@@ -31,8 +31,8 @@ public class Client {
                 case 4 -> studentManage.studentRemove(scanner);
                 case 5 -> {
                     int choice1;
-                    System.out.println("1. Sap xep tang dan");
-                    System.out.println("2. Sap xep giam dan");
+                    System.out.println("1. Sắp xếp tăng dần");
+                    System.out.println("2. Sắp xếp giảm dần");
                     choice1 = Integer.parseInt(scanner.nextLine());
                     switch (choice1) {
                         case 1 -> studentManage.sortStudentsByMarkAsc();

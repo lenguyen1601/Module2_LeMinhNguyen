@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6adc114d-ea35-4c00-bc4c-55cfb35dec5f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/StudentManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentManage.java" afterDir="false" />
+    <list default="true" id="6adc114d-ea35-4c00-bc4c-55cfb35dec5f" name="Changes" comment="up code lan 2">
+      <change beforePath="$PROJECT_DIR$/src/views/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Client.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +68,28 @@
       <option name="presentableId" value="Default" />
       <updated>1665627963469</updated>
     </task>
+    <task id="LOCAL-00001" summary="up code lan 2">
+      <created>1665636986300</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665636986300</updated>
+    </task>
+    <task id="LOCAL-00002" summary="up code lan 2">
+      <created>1665637206162</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665637206162</updated>
+    </task>
+    <task id="LOCAL-00003" summary="up code lan 2">
+      <created>1665637249954</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665637249954</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -81,5 +102,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="up code lan 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="up code lan 2" />
   </component>
 </project>
