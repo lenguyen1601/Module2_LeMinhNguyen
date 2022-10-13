@@ -11,28 +11,28 @@ public class StudentManage {
     public static ArrayList<Student> students = IO_WirteVsRead.read();
 
     public Student creatStudent(Scanner scanner) {
-        System.out.println("Nhap ma sinh vien: ");
+        System.out.println("Nhập mã sinh viên: ");
         String studentId = scanner.nextLine();
 
-        System.out.println("Nhap ten sinh vien: ");
+        System.out.println("Nhập tên sinh viên: ");
         String studentName = scanner.nextLine();
 
-        System.out.println("Nhap tuoi sinh vien: ");
+        System.out.println("Nhập tuổi sinh viên: ");
         int studentAge = Integer.parseInt(scanner.nextLine());
 
-        System.out.println("Nhap gioi tinh: ");
+        System.out.println("Nhâp giới tính: ");
         String studentGender = scanner.nextLine();
 
-        System.out.println("Nhap dia chi sinh vien: ");
+        System.out.println("Nhập dịa chỉ: ");
         String studentAdd = scanner.nextLine();
 
-        System.out.println("Nhap diem trung binh sinh vien: ");
+        System.out.println("Nhập điểm trung bình của sinh viên: ");
         Double studentMark = 0.0;
         
         try {
             studentMark = Double.valueOf(scanner.nextLine());
         }catch (Exception e){
-            System.out.println("sai dinh dang moi nhap lai");
+            System.out.println("Sai định dạng mời nhập lại!!!");
         }
         
 
@@ -53,26 +53,26 @@ public class StudentManage {
     }
 
     public void editStudent(Scanner scanner) {
-        System.out.println("Nhap ma sinh vien can sua thong tin: ");
+        System.out.println("Nhập mã sinh viên cần sửa thông tin: ");
         String Id = scanner.nextLine();
         for (int i = 0; i < students.size(); i++) {
             if (students.get(i).getStudentId().equals(Id)) {
-                System.out.println("Nhap ma sinh vien moi: ");
+                System.out.println("Nhập mã sinh viên mới: ");
                 String studentId = scanner.nextLine();
 
-                System.out.println("Nhap ten sinh vien: ");
+                System.out.println("Nhập tên sinh viên: ");
                 String studentName = scanner.nextLine();
 
-                System.out.println("Nhap tuoi sinh vien: ");
+                System.out.println("Nhập tuổi sinh viên: ");
                 int studentAge = Integer.parseInt(scanner.nextLine());
 
-                System.out.println("Nhap gioi tinh: ");
+                System.out.println("Nhập giới tính: ");
                 String studentGender = scanner.nextLine();
 
-                System.out.println("Nhap dia chi: ");
+                System.out.println("Nhập địa chỉ : ");
                 String studentAdd = scanner.nextLine();
 
-                System.out.println("Nahp diem trung binh: ");
+                System.out.println("Nhập điểm trung bình: ");
                 Double studentMark = Double.valueOf(scanner.nextLine());
 
                 students.get(i).setStudentId(studentId);
@@ -82,34 +82,34 @@ public class StudentManage {
                 students.get(i).setStudentAdd(studentAdd);
                 students.get(i).setStudentMark(studentMark);
 
-                System.out.println("Sua san pham thanh cong!!!");
+                System.out.println("Sửa sản phẩm thành công!!!");
             } else {
-                System.out.println("Khong tim thay san pham!!!");
+                System.out.println("Không tìm thấy sản phẩm!!!");
             }
         }
     }
 
     public void studentRemove(Scanner scanner) {
         boolean check = false;
-        System.out.println("Nhap ma sinh vien can xoa: ");
+        System.out.println("Nhập mã sinh viên cần xoá: ");
         String id = scanner.nextLine();
         for (int i = 0; i < students.size(); i++) {
             if (students.get(i).getStudentId().equals(id)) {
                 students.remove(i);
-                System.out.println("Xoa sinh vien thanh cong !");
+                System.out.println("Xoá sinh viêm thành công !");
                 check = true;
             }
         }
         if (!check) {
-            System.err.println("Khong tim thay sinh vien ! " + id);
+            System.err.println("Không tìm thấy sinh viên " + id);
         }
     }
     public void read(){
-        System.out.println("Doc thanh cong");
+        System.out.println("Đọc file thành công!");
     }
 
     public void write(){
-        System.out.println("Ghi thanh cong");
+        System.out.println("Ghi file thành công!");
     }
 
     public void sortStudentsByMarkAsc() {
@@ -138,9 +138,9 @@ public class StudentManage {
         Comparator<Student> comparator = new Comparator<Student>() {
             @Override
             public int compare(Student o1, Student o2) {
-                if (o1.getStudentMark() == o2.getStudentMark()) {
+                if (o2.getStudentMark() == o1.getStudentMark()) {
                     return 0;
-                } else if (o1.getStudentMark() > o2.getStudentMark()) {
+                } else if (o2.getStudentMark() > o1.getStudentMark()) {
                     return 1;
                 } else {
                     return -1;
